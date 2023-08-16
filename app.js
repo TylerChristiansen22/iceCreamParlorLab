@@ -78,12 +78,16 @@ function removeToppings(toppingName) {
     drawToppings()
 }
 function orderContainer(containerName) {
-    let foundContainers = containers.find(container => container.name == containerName)
-    if (foundContainers.quantity < 1) {
+    let totalContainers = 0
+    containers.forEach(container => {
+        totalContainers += container.quantity
+    })
+    if (totalContainers < 1) {
+        let foundContainers = containers.find(container => container.name == containerName)
         foundContainers.quantity++
         drawContainer()
+        console.log(foundContainers)
     }
-    console.log(foundContainers)
 }
 function removeContainer(containerName) {
     let foundContainers = containers.find(container => container.name == containerName)
