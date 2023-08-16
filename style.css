@@ -1,0 +1,57 @@
+body {
+    background-color: lightyellow;
+}
+
+.sprinklesImg {
+    background-image: url(https://images.unsplash.com/photo-1516746924755-babd21844370?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3ByaW5rbGVzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    width: 200px;
+}
+
+.chocChipImg {
+    background-image: url(https://images.unsplash.com/photo-1585502866757-30ae9e509e31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2hvY29sYXRlJTIwY2hpcHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    width: 200px;
+}
+
+.gummyWormImg {
+    background-image: url(https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z3VtbXklMjB3b3Jtc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    width: 200px;
+}
+
+.waffleConeImg {
+    background-image: url(https://images.unsplash.com/photo-1513329634746-37399553de66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdhZmZsZSUyMGNvbmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    width: 200px;
+}
+
+.waffleBowlImg {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe0nweH42lMxM8Drw3m34qe-8ZeCw43vqmdw&usqp=CAU);
+    background-size: cover;
+    width: 200px;
+}
+
+.dippedConeImg {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH-h6D-RJ6rHB3x9Ierbp7Sueo3lGErF_3Fg&usqp=CAU);
+    background-size: cover;
+    width: 200px;
+}
+
+.vanillaImg {
+    background-image: url(https://images.unsplash.com/photo-1610487512810-b614ad747572?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHZhbmlsbGElMjBpY2UlMjBjcmVhbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    width: 200px;
+}
+
+.chocolateImg {
+    background-image: url(https://images.unsplash.com/photo-1623000850264-08be785877bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNob2NvbGF0ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    width: 200px;
+}
+
+.strawberryImg {
+    background-image: url(https://images.unsplash.com/photo-1587393855524-087f83d95bc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3RyYXdiZXJyeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    width: 200px;
+}

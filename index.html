@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Tyler's Ice Cream Parlor</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <section class="row">
+            <div class="col-12 bg-dark text-light">
+                <h1>Tyler's Ice Cream Parlor</h1>
+            </div>
+        </section>
+    </header>
+    <main class="container-fluid">
+        <section class="row">
+            <div class="col-4 bg-light border">
+                <div class="row text-primary">
+                    <div class="col-6">
+                        <span>Name</span>
+                    </div>
+                    <div class="col-6 d-flex justify-content-between">
+                        <span>Qty</span>
+                        <span>Each</span>
+                        <span>Total</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 d-flex justify-content-around">
+                <div class="row">
+                    <div class="col-4 p-5 sprinklesImg">
+                        <button onclick="orderToppings('Sprinkles')" class="btn btn-success">Sprinkles</button>
+                        <button onclick="removeToppings('Sprinkles')" class="btn btn-danger">Remove</button>
+                    </div>
+                    <div class="col-4 p-5 chocChipImg">
+                        <button onclick="orderToppings('Chocolate Chips')" class="btn btn-success">Chocolate
+                            Chips</button>
+                        <button onclick="removeToppings('Chocolate Chips')" class="btn btn-danger">Remove</button>
+                    </div>
+                    <div class="col-4 p-5 gummyWormImg">
+                        <button onclick="orderToppings('Gummy Worms')" class="btn btn-success">Gummy Worms</button>
+                        <button onclick="removeToppings('Gummy Worms')" class="btn btn-danger">Remove</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <!-- cart item placeholder  -->
+            <div id="cart" class="col-4 bg-light border py-5">
+                <!-- <div class="row">
+                    <div class="col-6">
+                        <span>Flavor</span>
+                    </div>
+                    <div class="col-6 d-flex justify-content-between">
+                        <span>Qty</span>
+                        <span>Each</span>
+                        <span>Total</span>
+                    </div>
+                </div> -->
+            </div>
+            <!-- end cart item placeholder -->
+            <div class="col-8 d-flex justify-content-around">
+                <div class="row">
+                    <div class="col-4 p-5 waffleConeImg">
+                        <button onclick="orderContainer('Waffle Cone')" class="btn btn-success">Waffle Cone</button>
+                        <button onclick="removeContainer('Waffle Cone')" class="btn btn-danger">Remove</button>
+                    </div>
+                    <div class="col-4 p-5 waffleBowlImg">
+                        <button onclick="orderContainer('Waffle Bowl')" class="btn btn-success">Waffle Bowl</button>
+                        <button onclick="removeContainer('Waffle Bowl')" class="btn btn-danger">Remove</button>
+                    </div>
+                    <div class="col-4 p-5 dippedConeImg">
+                        <button onclick="orderContainer('Dipped Cone')" class="btn btn-success">Dipped Cone</button>
+                        <button onclick="removeContainer('Dipped Cone')" class="btn btn-danger">Remove</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div id="cart2" class="col-4 bg-light border py-5">
+                <!-- <div class="row">
+                                <div class="col-6">
+                                    <span>Flavor</span>
+                                </div>
+                                <div class="col-6 d-flex justify-content-between">
+                                    <span>Qty</span>
+                                    <span>Each</span>
+                                    <span>Total</span>
+                                </div>
+                            </div> -->
+            </div>
+            <div class="col-8 d-flex justify-content-around">
+                <div class="row">
+                    <div class="col-4 p-5 vanillaImg">
+                        <button onclick="orderIceCream('Vanilla')" class="btn btn-success">Vanilla Flavor</button>
+                        <button onclick="removeIceCream('Vanilla')" class="btn btn-danger">Remove</button>
+                    </div>
+                    <div class="col-4 p-5 chocolateImg">
+                        <button onclick="orderIceCream('Chocolate')" class="btn btn-success">Chocolate Flavor</button>
+                        <button onclick="removeIceCream('Chocolate')" class="btn btn-danger">Remove</button>
+                    </div>
+                    <div class="col-4 p-5 strawberryImg">
+                        <button onclick="orderIceCream('Strawberry')" class="btn btn-success">Strawberry Flavor</button>
+                        <button onclick="removeIceCream('Strawberry')" class="btn btn-danger">Remove</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div id="cart3" class="col-4 bg-light border py-5">
+                <!-- <div class="row">
+                        <div class="col-6">
+                            <span>Flavor</span>
+                        </div>
+                        <div class="col-6 d-flex justify-content-between">
+                            <span>Qty</span>
+                            <span>Each</span>
+                            <span>Total</span>
+                        </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid">
+        <section class="row">
+            <div id="end" class="col-4 bg-light border py-5 d-flex justify-content-end">
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-4 d-flex justify-content-end">
+                <button onclick="checkOut()" class="btn btn-success">Check Out</button>
+            </div>
+        </section>
+    </footer>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
